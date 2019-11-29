@@ -6,7 +6,7 @@ import './App.css';
 import SimpleList from './SimpleList';
 import SimpleDialogs from './SimpleDialogs';
 import SimpleAppBar from './SimpleAppBar';
-
+import SimpleExpansionPanel from './SimpleExpansionPanel';
 
 function App() {
   return (
@@ -15,9 +15,9 @@ function App() {
         <Route path="/" component={SimpleList} />
         <Route path="/SimpleDialogs" component={SimpleDialogs} />
         <Route path="/SimpleAppBar" component={SimpleAppBar} />
+        <Route path="/SimpleExpansionPanel" component={SimpleExpansionPanel} />
       </Router>
     </React.Fragment>
-
   );
 }
 
