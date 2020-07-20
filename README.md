@@ -8,6 +8,7 @@
 [App Bar（应用栏）](https://material-ui.com/zh/components/app-bar/)
 [Expansion Panels（扩展面板）](https://material-ui.com/zh/components/expansion-panels/)  
 
+[Tabs 选项卡](https://material-ui.com/zh/components/tabs/) 轻松地浏览和切换不同的视图
 [Lists（列表）](https://material-ui.com/zh/components/lists/) 列表是对文本或图像的连续、垂直的索引。  
 [Dialogs（对话框组件）](https://material-ui.com/zh/components/dialogs/) 对话框将一个任务告知给用户，它包含了一些关键信息，需要用户进行确认。
 
