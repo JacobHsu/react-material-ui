@@ -12,7 +12,7 @@ import Dialog from '@material-ui/core/Dialog';
 import PersonIcon from '@material-ui/icons/Person';
 import AddIcon from '@material-ui/icons/Add';
 import Typography from '@material-ui/core/Typography';
-import { blue } from '@material-ui/core/colors';
+import { blue, green, red } from '@material-ui/core/colors';
 
 const emails = ['username@gmail.com', 'user02@gmail.com'];
 const useStyles = makeStyles({
@@ -22,8 +22,20 @@ const useStyles = makeStyles({
   },
 });
 
+const dialogStyles = makeStyles({
+  root: {
+    backgroundColor: green[100],
+    color: blue[600],
+  },
+  list: {
+    backgroundColor: red[300],
+    color: blue[600],
+  }
+});
+
 function SimpleDialog(props) {
   const classes = useStyles();
+  const classesDialog = dialogStyles();
   const { onClose, selectedValue, open } = props;
 
   const handleClose = () => {
@@ -35,9 +47,9 @@ function SimpleDialog(props) {
   };
 
   return (
-    <Dialog onClose={handleClose} aria-labelledby="simple-dialog-title" open={open}>
+    <Dialog className={classesDialog.root} onClose={handleClose} aria-labelledby="simple-dialog-title" open={open}>
       <DialogTitle id="simple-dialog-title">Set backup account</DialogTitle>
-      <List>
+      <List className={classesDialog.list}>
         {emails.map(email => (
           <ListItem button onClick={() => handleListItemClick(email)} key={email}>
             <ListItemAvatar>
